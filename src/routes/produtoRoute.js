@@ -1,6 +1,6 @@
 const express = require('express')
 
-const routes = express.Router();
+const routes = express.Router()
 
 const produtoController = require('../controller/produtoController')
 
@@ -22,6 +22,6 @@ routes.get('/edit/:id', produtoController.abreedit)
 //edit
 routes.post('/edit/:id', produtoController.edit )
 
-routes.get('/del/:id', produtoController.del);
+routes.get('/del/:id', produtoController.del)
 
 module.exports = routes;
